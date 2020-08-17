@@ -3,16 +3,22 @@ function sleep(ms) {
 }
 
 async function replace() {
-    while(true){
-        for(var i = 0; i<5;i++){
-            var options = ["Peso mexicano","Dolar estadounidense", "Peso argentino", "Quetzal", "Libra esterlina"];
+    while (true) {
+        for (var i = 0; i < 5; i++) {
+
+            var options = ["Peso mexicano", "Dolar estadounidense", "Peso argentino", "Quetzal", "Libra esterlina"];
             //var random = Math.floor(Math.random() * 3);
-            await sleep(1500);
+            await sleep(3000);
+
             let container = $('#swapable');
-            var text = container.text();
-            container.text(text.replace(text, options[i]));
+
+            container.fadeOut(550, function () {
+                var text = container.text();
+                container.text(text.replace(text, options[i])).fadeIn(550);
+            });
+
         }
     }
 }
-
+setInterval(replace, 3000);
 replace();
