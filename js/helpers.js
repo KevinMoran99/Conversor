@@ -20,5 +20,5 @@ async function replace() {
         }
     }
 }
-setInterval(replace, 3000);
+//setInterval(replace, 3000);
 replace();
