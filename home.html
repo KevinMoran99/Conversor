@@ -36,30 +36,104 @@
 
     <div class="container mt-5">
         <form>
+            
             <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Ingrese cantidad a convertir" aria-label="Large"
+                <input type="number" class="form-control" id="baseNumber" value="1" aria-label="Large"
                     aria-describedby="inputGroup-sizing-lg">
+                
                 <div class="input-group-prepend">
                     <select class="custom-select input-group-text bg-primary text-light h-100"
-                        id="inputGroup-sizing-lg">
+                        id="base">
                         <option class="pr-5">USD</option>
+                        <option class="pr-5">HKD</option>
+                        <option class="pr-5">ISK</option>
+                        <option class="pr-5">PHP</option>
+                        <option class="pr-5">DKK</option>
+                        <option class="pr-5">HUF</option>
+                        <option class="pr-5">CZK</option>
+                        <option class="pr-5">GBP</option>
+                        <option class="pr-5">RON</option>
+                        <option class="pr-5">SEK</option>
+                        <option class="pr-5">IDR</option>
+                        <option class="pr-5">INR</option>
+                        <option class="pr-5">BRL</option>
+                        <option class="pr-5">RUB</option>
+                        <option class="pr-5">HRK</option>
+                        <option class="pr-5">JPY</option>
+                        <option class="pr-5">THB</option>
+                        <option class="pr-5">CHF</option>
+                        <option class="pr-5">EUR</option>
+                        <option class="pr-5">MYR</option>
+                        <option class="pr-5">BGN</option>
+                        <option class="pr-5">TRY</option>
+                        <option class="pr-5">CNY</option>
+                        <option class="pr-5">NOK</option>
+                        <option class="pr-5">NZD</option>
+                        <option class="pr-5">ZAR</option>
+                        <option class="pr-5">CAD</option>
+                        <option class="pr-5">MXN</option>
+                        <option class="pr-5">SGD</option>
+                        <option class="pr-5">AUD</option>
+                        <option class="pr-5">ILS</option>
+                        <option class="pr-5">KRW</option>
+                        <option class="pr-5">PLN</option>
                     </select>
                 </div>
             </div>
+            
             <div class="row mt-5">
                 <h4 class="text-white text-center col-5 offset-1 col-md-3 offset-md-3 col-lg-2 offset-lg-4">Convertir a:
                 </h4>
-                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2">
+                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2"id="target">
+                    
                     <option class="pr-5">MXN</option>
-                </select>
+                    <option class="pr-5">INR</option>                    
+                    <option class="pr-5">HKD</option>
+                    <option class="pr-5">ISK</option>
+                    <option class="pr-5">PHP</option>
+                    <option class="pr-5">DKK</option>    
+                    <option class="pr-5">HUF</option>
+                    <option class="pr-5">CZK</option>
+                    <option class="pr-5">GBP</option>
+                    <option class="pr-5">RON</option>
+                    <option class="pr-5">SEK</option>
+                    <option class="pr-5">IDR</option>
+                    <option class="pr-5">CAD</option>
+                    <option class="pr-5">BRL</option>
+                    <option class="pr-5">RUB</option>
+                    <option class="pr-5">HRK</option>
+                    <option class="pr-5">JPY</option>
+                    <option class="pr-5">THB</option>
+                    <option class="pr-5">CHF</option>
+                    <option class="pr-5">EUR</option>
+                    <option class="pr-5">MYR</option>
+                    <option class="pr-5">BGN</option>
+                    <option class="pr-5">TRY</option>
+                    <option class="pr-5">CNY</option>
+                    <option class="pr-5">NOK</option>
+                    <option class="pr-5">NZD</option>
+                    <option class="pr-5">ZAR</option>
+                    <option class="pr-5">USD</option>               
+                    <option class="pr-5">SGD</option>
+                    <option class="pr-5">AUD</option>
+                    <option class="pr-5">ILS</option>   
+                    <option class="pr-5">KRW</option>
+                    <option class="pr-5">PLN</option>
+                </select>             
+
+            </div>
+            
+            <div class="row mt-5 input-group input-group-lg">
+                <input type="number" class="form-control" id="targetNumber" aria-label="Large"
+                    aria-describedby="inputGroup-sizing-lg">
             </div>
         </form>
 
-        <div class="card mt-5 text-center">
+      <!--  <div class="card mt-5 text-center">
             <div class="card-body">
                 1 Dolar Estadounidense = 21.97 Pesos Mexicanos
             </div>
-        </div>
+        </div>-->
         <h4 class="text-white text-center mt-5">Además podría interesarle...</h4>
         <div class="row mt-5 text-center">
             <div class="col-12 col-sm-6 col-md-4 p-2">
@@ -145,5 +219,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/helpers.js"></script>
 </body>
-
+    
+    <script src="js/script.js"></script>
 </html>
+
+
