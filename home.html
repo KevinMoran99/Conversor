@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
     <h2 class="text-white text-center mt-5">Obtenga la conversión de moneda a: <span id="swapable">Peso mexicano</span></h2>
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="app">
         <form>
             
             <div class="input-group input-group-lg">
@@ -42,7 +43,12 @@
                     aria-describedby="inputGroup-sizing-lg">
                 
                 <div class="input-group-prepend">
-                    <select class="custom-select input-group-text bg-primary text-light h-100"
+                  <select class="custom-select input-group-text bg-primary text-light h-100" id="base" v-model="basea">
+                    <option class="pr-5" v-for="base in bases">
+                      {{base}}
+                    </option>
+                  </select>
+                    <!-- <select class="custom-select input-group-text bg-primary text-light h-100"
                         id="base">
                         <option class="pr-5">USD</option>
                         <option class="pr-5">HKD</option>
@@ -77,14 +83,19 @@
                         <option class="pr-5">ILS</option>
                         <option class="pr-5">KRW</option>
                         <option class="pr-5">PLN</option>
-                    </select>
+                    </select> -->
                 </div>
             </div>
             
             <div class="row mt-5">
                 <h4 class="text-white text-center col-5 offset-1 col-md-3 offset-md-3 col-lg-2 offset-lg-4">Convertir a:
                 </h4>
-                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2"id="target">
+                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2"id="target" v-model="targetv">
+                  <option class="pr-5" v-for="target in targets">
+                    {{ target }}
+                  </option>
+                </select>
+                <!-- <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2"id="target">
                     
                     <option class="pr-5">MXN</option>
                     <option class="pr-5">INR</option>                    
@@ -119,7 +130,7 @@
                     <option class="pr-5">ILS</option>   
                     <option class="pr-5">KRW</option>
                     <option class="pr-5">PLN</option>
-                </select>             
+                </select>              -->
 
             </div>
             
@@ -128,6 +139,8 @@
                     aria-describedby="inputGroup-sizing-lg">
             </div>
         </form>
+
+        <div class="text-white mt-3">{{$data}}</div>
 
       <!--  <div class="card mt-5 text-center">
             <div class="card-body">
@@ -218,9 +231,10 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/helpers.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script.vue.js"></script>
 </body>
     
-    <script src="js/script.js"></script>
 </html>
 
 
