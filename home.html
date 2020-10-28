@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
         <span class="navbar-brand">Conversor de divisas</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,105 +31,60 @@
             </ul>
         </div>
     </nav>
-
-    <h2 class="text-white text-center mt-5">Obtenga la conversión de moneda a: <span id="swapable">Peso mexicano</span></h2>
-
     <div class="container mt-5">
+        <h2 class="text-white text-center mt-5">Obtenga la conversión de moneda a: <span id="swapable">Peso
+                mexicano</span></h2>
         <form>
-            
+
             <div class="input-group input-group-lg">
                 <input type="number" class="form-control" id="baseNumber" value="1" aria-label="Large"
                     aria-describedby="inputGroup-sizing-lg">
-                
+
                 <div class="input-group-prepend">
-                    <select class="custom-select input-group-text bg-primary text-light h-100"
-                        id="base">
+                    <select class="custom-select input-group-text bg-primary text-light h-100" id="base">
                         <option class="pr-5">USD</option>
-                        <option class="pr-5">HKD</option>
-                        <option class="pr-5">ISK</option>
-                        <option class="pr-5">PHP</option>
-                        <option class="pr-5">DKK</option>
-                        <option class="pr-5">HUF</option>
-                        <option class="pr-5">CZK</option>
-                        <option class="pr-5">GBP</option>
-                        <option class="pr-5">RON</option>
-                        <option class="pr-5">SEK</option>
-                        <option class="pr-5">IDR</option>
-                        <option class="pr-5">INR</option>
-                        <option class="pr-5">BRL</option>
-                        <option class="pr-5">RUB</option>
-                        <option class="pr-5">HRK</option>
-                        <option class="pr-5">JPY</option>
-                        <option class="pr-5">THB</option>
-                        <option class="pr-5">CHF</option>
                         <option class="pr-5">EUR</option>
-                        <option class="pr-5">MYR</option>
-                        <option class="pr-5">BGN</option>
-                        <option class="pr-5">TRY</option>
-                        <option class="pr-5">CNY</option>
-                        <option class="pr-5">NOK</option>
-                        <option class="pr-5">NZD</option>
-                        <option class="pr-5">ZAR</option>
+                        <option class="pr-5">GBP</option>
+                        <option class="pr-5">JPY</option>
                         <option class="pr-5">CAD</option>
+                        <option class="pr-5">CHF</option>
                         <option class="pr-5">MXN</option>
-                        <option class="pr-5">SGD</option>
                         <option class="pr-5">AUD</option>
-                        <option class="pr-5">ILS</option>
+                        <option class="pr-5">CNY</option>
+                        <option class="pr-5">HKD</option>
+                        <option class="pr-5">NZD</option>
                         <option class="pr-5">KRW</option>
-                        <option class="pr-5">PLN</option>
                     </select>
                 </div>
             </div>
-            
+
             <div class="row mt-5">
                 <h4 class="text-white text-center col-5 offset-1 col-md-3 offset-md-3 col-lg-2 offset-lg-4">Convertir a:
                 </h4>
-                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2"id="target">
-                    
+                <select class="custom-select bg-primary text-light col-5 col-md-3 col-lg-2" id="target">
                     <option class="pr-5">MXN</option>
-                    <option class="pr-5">INR</option>                    
-                    <option class="pr-5">HKD</option>
-                    <option class="pr-5">ISK</option>
-                    <option class="pr-5">PHP</option>
-                    <option class="pr-5">DKK</option>    
-                    <option class="pr-5">HUF</option>
-                    <option class="pr-5">CZK</option>
-                    <option class="pr-5">GBP</option>
-                    <option class="pr-5">RON</option>
-                    <option class="pr-5">SEK</option>
-                    <option class="pr-5">IDR</option>
-                    <option class="pr-5">CAD</option>
-                    <option class="pr-5">BRL</option>
-                    <option class="pr-5">RUB</option>
-                    <option class="pr-5">HRK</option>
-                    <option class="pr-5">JPY</option>
-                    <option class="pr-5">THB</option>
-                    <option class="pr-5">CHF</option>
                     <option class="pr-5">EUR</option>
-                    <option class="pr-5">MYR</option>
-                    <option class="pr-5">BGN</option>
-                    <option class="pr-5">TRY</option>
-                    <option class="pr-5">CNY</option>
-                    <option class="pr-5">NOK</option>
-                    <option class="pr-5">NZD</option>
-                    <option class="pr-5">ZAR</option>
-                    <option class="pr-5">USD</option>               
-                    <option class="pr-5">SGD</option>
+                    <option class="pr-5">GBP</option>
+                    <option class="pr-5">JPY</option>
+                    <option class="pr-5">CAD</option>
+                    <option class="pr-5">CHF</option>
+                    <option class="pr-5">USD</option>
                     <option class="pr-5">AUD</option>
-                    <option class="pr-5">ILS</option>   
+                    <option class="pr-5">CNY</option>
+                    <option class="pr-5">HKD</option>
+                    <option class="pr-5">NZD</option>
                     <option class="pr-5">KRW</option>
-                    <option class="pr-5">PLN</option>
-                </select>             
+                </select>
 
             </div>
-            
+
             <div class="row mt-5 input-group input-group-lg">
                 <input type="number" class="form-control" id="targetNumber" aria-label="Large"
                     aria-describedby="inputGroup-sizing-lg">
             </div>
         </form>
 
-      <!--  <div class="card mt-5 text-center">
+        <!--  <div class="card mt-5 text-center">
             <div class="card-body">
                 1 Dolar Estadounidense = 21.97 Pesos Mexicanos
             </div>
@@ -139,24 +94,30 @@
             <div class="col-12 col-sm-6 col-md-4 p-2">
                 <div class="card">
                     <div class="card-body">
-                        <p>1 USD</p>
-                        <p>73.16 Pesos Argentinos</p>
+                        <div id="extra1">
+                            <p>{{ base }}</p>
+                            <p>{{ result }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 p-2">
                 <div class="card">
                     <div class="card-body">
-                        <p>1 USD</p>
-                        <p>7.70 Quetzales</p>
+                        <div id="extra2">
+                            <p>{{ base }}</p>
+                            <p>{{ result }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 p-2">
                 <div class="card">
                     <div class="card-body">
-                        <p>1 USD</p>
-                        <p>0.76 Libras Esterlinas</p>
+                        <div id="extra3">
+                            <p>{{ base }}</p>
+                            <p>{{ result }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,13 +175,13 @@
         <h5>© 2020 Copyright. Sitio Web construido con <a href="https://getbootstrap.com/">Bootstrap</a> para <a
                 href="http://www.udb.edu.sv/udb/">UDB</a>.</h5>
     </footer>
-
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/helpers.js"></script>
 </body>
-    
-    <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script type="text/javascript" src="./data/data.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/script.js"></script>
+
+
 </html>
-
-

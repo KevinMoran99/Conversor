@@ -4,9 +4,9 @@ function sleep(ms) {
 
 async function replace() {
     while (true) {
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 11; i++) {
 
-            var options = ["Peso mexicano", "Dolar estadounidense", "Peso argentino", "Quetzal", "Libra esterlina"];
+            var options = data;
             //var random = Math.floor(Math.random() * 3);
             await sleep(3000);
 
@@ -14,11 +14,11 @@ async function replace() {
 
             container.fadeOut(550, function () {
                 var text = container.text();
-                container.text(text.replace(text, options[i])).fadeIn(550);
+                container.text(text.replace(text, options[i].name)).fadeIn(550);
             });
 
         }
     }
 }
-//setInterval(replace, 3000);
 replace();
+
