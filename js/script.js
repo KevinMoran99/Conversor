@@ -9,6 +9,7 @@ try {
 catch {
   localStorage.setItem("sesion", []);
   local = [];
+  reverseLocal = [];
 }
 let currencies = data;
 //Variables
