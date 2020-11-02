@@ -1,62 +1,62 @@
 var data = [
     {
         "name": "Libra esterlina",
-        "symbol":"",
+        "symbol":"£",
         "iso":"GBP"
     },
     {
         "name": "Euro",
-        "symbol":"",
+        "symbol":"€",
         "iso":"EUR"
     },
     {
         "name": "Dolar estadounidense",
-        "symbol":"",
+        "symbol":"$",
         "iso":"USD"
     },
     {
         "name": "Yen japones",
-        "symbol":"",
+        "symbol":"¥",
         "iso":"JPY"
     },
     {
         "name": "Dolar canadiense",
-        "symbol":"",
+        "symbol":"C$",
         "iso":"CAD"
     },
     {
         "name": "Franco Suizo",
-        "symbol":"",
+        "symbol":"Fr.",
         "iso":"CHF"
     },
     {
         "name": "Peso Mexicano",
-        "symbol":"",
+        "symbol":"$",
         "iso":"MXN"
     },
     {
         "name": "Dolar australiano",
-        "symbol":"",
+        "symbol":"$",
         "iso":"AUD"
     },
     {
         "name": "Renminbi",
-        "symbol":"",
+        "symbol":"¥",
         "iso":"CNY"
     },
     {
         "name": "Dolar de Hong Kong",
-        "symbol":"",
+        "symbol":"$",
         "iso":"HKD"
     },
     {
         "name": "Dolar de Nueva Zelanda",
-        "symbol":"",
+        "symbol":"$",
         "iso":"NZD"
     },
     {
         "name": "Won Sur coreano",
-        "symbol":"",
+        "symbol":"₩",
         "iso":"KRW"
     }
 ];

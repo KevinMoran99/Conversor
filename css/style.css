@@ -5,3 +5,11 @@ body {
 .container {
     margin-top: 100px !important; 
 }
+
+#targetNumber {
+    background-color: white;
+}
+
+.card-group .card {
+    cursor: pointer;
+}
