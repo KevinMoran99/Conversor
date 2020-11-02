@@ -1,14 +1,15 @@
 let local;
+let reverseLocal;
 try {
   local = JSON.parse(localStorage.getItem("sesion"));
+  //Copiando historial para reversarlo
+  reverseLocal = [...local];
+  reverseLocal.reverse();
 }
 catch {
   localStorage.setItem("sesion", []);
   local = [];
 }
-//Copiando historial para reversarlo
-let reverseLocal = [...local];
-reverseLocal.reverse();
 let currencies = data;
 //Variables
 var baseCurrency = document.getElementById('base').value;
